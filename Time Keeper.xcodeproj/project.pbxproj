@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA3007DA269286E60029BC0D /* TimeKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3007D9269286E60029BC0D /* TimeKeeperApp.swift */; };
+		AA3007DC269286E60029BC0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3007DB269286E60029BC0D /* ContentView.swift */; };
+		AA3007DE269286E80029BC0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3007DD269286E80029BC0D /* Assets.xcassets */; };
+		AA3007E1269286E80029BC0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3007E0269286E80029BC0D /* Preview Assets.xcassets */; };
+		AA3007F5269286E90029BC0D /* Time_KeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3007F4269286E90029BC0D /* Time_KeeperUITests.swift */; };
+		AA3008022692890D0029BC0D /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3008012692890D0029BC0D /* TimeEntry.swift */; };
+		AA300804269299650029BC0D /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA300803269299650029BC0D /* Store.swift */; };
+		AA3008062692A3610029BC0D /* DateFormatter+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3008052692A3610029BC0D /* DateFormatter+Format.swift */; };
+		AA3008082692A3DF0029BC0D /* Date+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3008072692A3DF0029BC0D /* Date+FormattedString.swift */; };
+		AA3008102692E7C30029BC0D /* FinanceKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA30080F2692E7C30029BC0D /* FinanceKit */; };
+		AA3008122692EB180029BC0D /* DateComponents+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3008112692EB180029BC0D /* DateComponents+FormattedString.swift */; };
+		AA30081B2693E5BA0029BC0D /* Payout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30081A2693E5BA0029BC0D /* Payout.swift */; };
+		AA46CE38269BF23700F47C8B /* EntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46CE37269BF23700F47C8B /* EntryRowView.swift */; };
+		AA46CE3A269BF24B00F47C8B /* PayoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46CE39269BF24B00F47C8B /* PayoutRowView.swift */; };
+		AA46CE3C269BF3B900F47C8B /* AddPayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46CE3B269BF3B900F47C8B /* AddPayoutView.swift */; };
+		AA5F7F26269C540C00FB0A21 /* EditTimeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5F7F25269C540C00FB0A21 /* EditTimeEntryView.swift */; };
+		AAE1293926952AF100242926 /* DateComponents+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1293826952AF100242926 /* DateComponents+TimeInterval.swift */; };
+		AAE1293B26952B0A00242926 /* DateComponents+TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1293A26952B0A00242926 /* DateComponents+TimeIntervalTests.swift */; };
+		AAE1293E2695495C00242926 /* DateComponents+FormattedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1293D2695495C00242926 /* DateComponents+FormattedStringTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA3007E7269286E90029BC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3007CE269286E60029BC0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3007D5269286E60029BC0D;
+			remoteInfo = "Time Keeper";
+		};
+		AA3007F1269286E90029BC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3007CE269286E60029BC0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3007D5269286E60029BC0D;
+			remoteInfo = "Time Keeper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA3007D6269286E60029BC0D /* Time Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3007D9269286E60029BC0D /* TimeKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeperApp.swift; sourceTree = "<group>"; };
+		AA3007DB269286E60029BC0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA3007DD269286E80029BC0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA3007E0269286E80029BC0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA3007E6269286E90029BC0D /* Time KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3007F0269286E90029BC0D /* Time KeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time KeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3007F4269286E90029BC0D /* Time_KeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_KeeperUITests.swift; sourceTree = "<group>"; };
+		AA3008012692890D0029BC0D /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		AA300803269299650029BC0D /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		AA3008052692A3610029BC0D /* DateFormatter+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Format.swift"; sourceTree = "<group>"; };
+		AA3008072692A3DF0029BC0D /* Date+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedString.swift"; sourceTree = "<group>"; };
+		AA3008112692EB180029BC0D /* DateComponents+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+FormattedString.swift"; sourceTree = "<group>"; };
+		AA30081A2693E5BA0029BC0D /* Payout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payout.swift; sourceTree = "<group>"; };
+		AA46CE37269BF23700F47C8B /* EntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRowView.swift; sourceTree = "<group>"; };
+		AA46CE39269BF24B00F47C8B /* PayoutRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoutRowView.swift; sourceTree = "<group>"; };
+		AA46CE3B269BF3B900F47C8B /* AddPayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPayoutView.swift; sourceTree = "<group>"; };
+		AA5F7F25269C540C00FB0A21 /* EditTimeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimeEntryView.swift; sourceTree = "<group>"; };
+		AAE1293826952AF100242926 /* DateComponents+TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+TimeInterval.swift"; sourceTree = "<group>"; };
+		AAE1293A26952B0A00242926 /* DateComponents+TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+TimeIntervalTests.swift"; sourceTree = "<group>"; };
+		AAE1293C26953B6E00242926 /* Time-Keeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Time-Keeper-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AAE1293D2695495C00242926 /* DateComponents+FormattedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+FormattedStringTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3007D3269286E60029BC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3008102692E7C30029BC0D /* FinanceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007E3269286E90029BC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007ED269286E90029BC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3007CD269286E60029BC0D = {
+			isa = PBXGroup;
+			children = (
+				AA3007D8269286E60029BC0D /* Time Keeper */,
+				AA3007E9269286E90029BC0D /* Time KeeperTests */,
+				AA3007F3269286E90029BC0D /* Time KeeperUITests */,
+				AA3007D7269286E60029BC0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3007D7269286E60029BC0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3007D6269286E60029BC0D /* Time Keeper.app */,
+				AA3007E6269286E90029BC0D /* Time KeeperTests.xctest */,
+				AA3007F0269286E90029BC0D /* Time KeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3007D8269286E60029BC0D /* Time Keeper */ = {
+			isa = PBXGroup;
+			children = (
+				AA46CE3B269BF3B900F47C8B /* AddPayoutView.swift */,
+				AA3007DD269286E80029BC0D /* Assets.xcassets */,
+				AA3007DB269286E60029BC0D /* ContentView.swift */,
+				AA3008072692A3DF0029BC0D /* Date+FormattedString.swift */,
+				AA3008112692EB180029BC0D /* DateComponents+FormattedString.swift */,
+				AAE1293826952AF100242926 /* DateComponents+TimeInterval.swift */,
+				AA3008052692A3610029BC0D /* DateFormatter+Format.swift */,
+				AA5F7F25269C540C00FB0A21 /* EditTimeEntryView.swift */,
+				AA46CE37269BF23700F47C8B /* EntryRowView.swift */,
+				AA30081A2693E5BA0029BC0D /* Payout.swift */,
+				AA46CE39269BF24B00F47C8B /* PayoutRowView.swift */,
+				AA3007DF269286E80029BC0D /* Preview Content */,
+				AA300803269299650029BC0D /* Store.swift */,
+				AAE1293C26953B6E00242926 /* Time-Keeper-Info.plist */,
+				AA3008012692890D0029BC0D /* TimeEntry.swift */,
+				AA3007D9269286E60029BC0D /* TimeKeeperApp.swift */,
+			);
+			path = "Time Keeper";
+			sourceTree = "<group>";
+		};
+		AA3007DF269286E80029BC0D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA3007E0269286E80029BC0D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA3007E9269286E90029BC0D /* Time KeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE1293D2695495C00242926 /* DateComponents+FormattedStringTests.swift */,
+				AAE1293A26952B0A00242926 /* DateComponents+TimeIntervalTests.swift */,
+			);
+			path = "Time KeeperTests";
+			sourceTree = "<group>";
+		};
+		AA3007F3269286E90029BC0D /* Time KeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3007F4269286E90029BC0D /* Time_KeeperUITests.swift */,
+			);
+			path = "Time KeeperUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA3007D5269286E60029BC0D /* Time Keeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3007F8269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time Keeper" */;
+			buildPhases = (
+				AA3007D2269286E60029BC0D /* Sources */,
+				AA3007D3269286E60029BC0D /* Frameworks */,
+				AA3007D4269286E60029BC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Keeper";
+			packageProductDependencies = (
+				AA30080F2692E7C30029BC0D /* FinanceKit */,
+			);
+			productName = "Time Keeper";
+			productReference = AA3007D6269286E60029BC0D /* Time Keeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA3007E5269286E90029BC0D /* Time KeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3007FB269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time KeeperTests" */;
+			buildPhases = (
+				AA3007E2269286E90029BC0D /* Sources */,
+				AA3007E3269286E90029BC0D /* Frameworks */,
+				AA3007E4269286E90029BC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3007E8269286E90029BC0D /* PBXTargetDependency */,
+			);
+			name = "Time KeeperTests";
+			productName = "Time KeeperTests";
+			productReference = AA3007E6269286E90029BC0D /* Time KeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA3007EF269286E90029BC0D /* Time KeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3007FE269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time KeeperUITests" */;
+			buildPhases = (
+				AA3007EC269286E90029BC0D /* Sources */,
+				AA3007ED269286E90029BC0D /* Frameworks */,
+				AA3007EE269286E90029BC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3007F2269286E90029BC0D /* PBXTargetDependency */,
+			);
+			name = "Time KeeperUITests";
+			productName = "Time KeeperUITests";
+			productReference = AA3007F0269286E90029BC0D /* Time KeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3007CE269286E60029BC0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AA3007D5269286E60029BC0D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AA3007E5269286E90029BC0D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AA3007D5269286E60029BC0D;
+					};
+					AA3007EF269286E90029BC0D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AA3007D5269286E60029BC0D;
+					};
+				};
+			};
+			buildConfigurationList = AA3007D1269286E60029BC0D /* Build configuration list for PBXProject "Time Keeper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA3007CD269286E60029BC0D;
+			packageReferences = (
+				AA30080E2692E7C20029BC0D /* XCRemoteSwiftPackageReference "financekit" */,
+			);
+			productRefGroup = AA3007D7269286E60029BC0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3007D5269286E60029BC0D /* Time Keeper */,
+				AA3007E5269286E90029BC0D /* Time KeeperTests */,
+				AA3007EF269286E90029BC0D /* Time KeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA3007D4269286E60029BC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3007E1269286E80029BC0D /* Preview Assets.xcassets in Resources */,
+				AA3007DE269286E80029BC0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007E4269286E90029BC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007EE269286E90029BC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3007D2269286E60029BC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5F7F26269C540C00FB0A21 /* EditTimeEntryView.swift in Sources */,
+				AA3008062692A3610029BC0D /* DateFormatter+Format.swift in Sources */,
+				AA30081B2693E5BA0029BC0D /* Payout.swift in Sources */,
+				AA3007DC269286E60029BC0D /* ContentView.swift in Sources */,
+				AA3007DA269286E60029BC0D /* TimeKeeperApp.swift in Sources */,
+				AA3008082692A3DF0029BC0D /* Date+FormattedString.swift in Sources */,
+				AAE1293926952AF100242926 /* DateComponents+TimeInterval.swift in Sources */,
+				AA46CE38269BF23700F47C8B /* EntryRowView.swift in Sources */,
+				AA46CE3A269BF24B00F47C8B /* PayoutRowView.swift in Sources */,
+				AA46CE3C269BF3B900F47C8B /* AddPayoutView.swift in Sources */,
+				AA3008022692890D0029BC0D /* TimeEntry.swift in Sources */,
+				AA300804269299650029BC0D /* Store.swift in Sources */,
+				AA3008122692EB180029BC0D /* DateComponents+FormattedString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007E2269286E90029BC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE1293B26952B0A00242926 /* DateComponents+TimeIntervalTests.swift in Sources */,
+				AAE1293E2695495C00242926 /* DateComponents+FormattedStringTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3007EC269286E90029BC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3007F5269286E90029BC0D /* Time_KeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA3007E8269286E90029BC0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3007D5269286E60029BC0D /* Time Keeper */;
+			targetProxy = AA3007E7269286E90029BC0D /* PBXContainerItemProxy */;
+		};
+		AA3007F2269286E90029BC0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3007D5269286E60029BC0D /* Time Keeper */;
+			targetProxy = AA3007F1269286E90029BC0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA3007F6269286E90029BC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA3007F7269286E90029BC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AA3007F9269286E90029BC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Time Keeper/Preview Content\"";
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Time-Keeper-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "Time Keeper";
+				INFOPLIST_KEY_CFBundleName = "Time Keeper";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA3007FA269286E90029BC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Time Keeper/Preview Content\"";
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Time-Keeper-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "Time Keeper";
+				INFOPLIST_KEY_CFBundleName = "Time Keeper";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-Keeper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA3007FC269286E90029BC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-KeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time Keeper.app/Contents/MacOS/Time Keeper";
+			};
+			name = Debug;
+		};
+		AA3007FD269286E90029BC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-KeeperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time Keeper.app/Contents/MacOS/Time Keeper";
+			};
+			name = Release;
+		};
+		AA3007FF269286E90029BC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-KeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Time Keeper";
+			};
+			name = Debug;
+		};
+		AA300800269286E90029BC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42A8JXDT37;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.mitteldorf.Time-KeeperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Time Keeper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3007D1269286E60029BC0D /* Build configuration list for PBXProject "Time Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3007F6269286E90029BC0D /* Debug */,
+				AA3007F7269286E90029BC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3007F8269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3007F9269286E90029BC0D /* Debug */,
+				AA3007FA269286E90029BC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3007FB269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time KeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3007FC269286E90029BC0D /* Debug */,
+				AA3007FD269286E90029BC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3007FE269286E90029BC0D /* Build configuration list for PBXNativeTarget "Time KeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3007FF269286E90029BC0D /* Debug */,
+				AA300800269286E90029BC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA30080E2692E7C20029BC0D /* XCRemoteSwiftPackageReference "financekit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/christiankm/financekit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA30080F2692E7C30029BC0D /* FinanceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA30080E2692E7C20029BC0D /* XCRemoteSwiftPackageReference "financekit" */;
+			productName = FinanceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA3007CE269286E60029BC0D /* Project object */;
+}
